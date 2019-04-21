@@ -1,0 +1,533 @@
+@charset "UTF-8";
+/**
+ * Font
+ */
+/*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+--------------------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * Typography
+ */
+html {
+  font-size: 62.5%;
+}
+
+html.increase-font-size {
+  font-size: 100%;
+}
+
+html.increase-font-size .col {
+  width: 1000px;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 4rem;
+}
+
+p,
+q,
+a,
+li {
+  font-size: 1.8rem;
+  line-height: 2.9124rem;
+  word-spacing: 5px;
+  letter-spacing: -0.3px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 4px double #000;
+}
+
+q {
+  font-style: italic;
+}
+
+.text {
+  padding-bottom: 100px;
+}
+
+.text p + p {
+  margin-top: 2rem;
+}
+
+.text ul {
+  margin-top: 2rem;
+}
+
+/**
+ * Illustration
+ */
+.img {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.img img {
+  width: 100%;
+}
+
+/**
+ * Columns
+ */
+.col {
+  margin: 0 auto;
+  width: 600px;
+}
+
+/**
+ * Header
+ */
+.header {
+  padding: 0 100px;
+  /**
+ * Quotes
+ */
+}
+
+.header.subheader {
+  padding: 200px 0;
+}
+
+.header .blockquote-panel {
+  text-align: right;
+}
+
+.header .blockquote {
+  text-align: right;
+  margin: 100px 0;
+  padding: 0;
+  width: 500px;
+  display: inline-block;
+}
+
+.header .blockquote q {
+  font-style: italic;
+}
+
+.header .blockquote .quote-author {
+  margin-top: 10px;
+}
+
+.header .blockquote ul > li {
+  margin-bottom: 30px;
+}
+
+.header .blockquote ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.header .header-title {
+  font-size: 10rem;
+  font-family: "Impact", sans-serif;
+  letter-spacing: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header .header-title .title-1 {
+  font-size: 2rem;
+  letter-spacing: 35px;
+  font-family: arial;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.header .header-title .title-2 {
+  color: #999;
+  background: url("https://i.imgur.com/PxAJOHs.gif");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .header-title .subtitle {
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.header p {
+  text-align: center;
+  padding: 50px 0;
+  text-transform: lowercase;
+}
+
+/**
+ * Quotes
+ */
+.blockquote-panel {
+  text-align: right;
+}
+
+.blockquote {
+  text-align: right;
+  margin: 300px 0 100px;
+  padding: 0;
+  width: 500px;
+  display: inline-block;
+}
+
+.blockquote .quote-author {
+  margin-top: 10px;
+}
+
+.blockquote ul > li {
+  margin-bottom: 50px;
+}
+
+.blockquote ul > li:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Key
+ */
+.key p {
+  margin: 0;
+}
+
+.key-block {
+  padding: 50px 0;
+}
+
+.key-spacer {
+  padding: 15px 0;
+}
+
+/**
+ * Octagon
+ */
+.octagon {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 100px auto;
+  overflow: hidden;
+  -webkit-animation: octagon-spin infinite 60s linear;
+          animation: octagon-spin infinite 60s linear;
+}
+
+@-webkit-keyframes octagon-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes octagon-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.octagon img {
+  display: none;
+}
+
+/**
+ * Octagon Button
+ */
+.o-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 100;
+  opacity: 0;
+}
+
+.octagon .o {
+  display: block;
+}
+
+.o {
+  position: absolute;
+  background-attachment: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.o-shape {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.o-title {
+  color: #fff;
+  font-size: 100px;
+  font-family: impact;
+  letter-spacing: 45px;
+  line-height: 410px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: -20px;
+  position: relative;
+  z-index: 200;
+}
+
+.o-title span {
+  margin-top: 65px;
+  left: 30px;
+  letter-spacing: 35px;
+  width: 100%;
+  font-size: 20px;
+  font-family: arial;
+  display: block;
+  position: absolute;
+}
+
+/* Fisrt Part 1 - 4 */
+.o-0 {
+  -webkit-clip-path: polygon(300px 300px, 200px 400px, 400px 400px);
+          clip-path: polygon(300px 300px, 200px 400px, 400px 400px);
+}
+
+.o-1 {
+  -webkit-clip-path: polygon(300px 300px, 400px 400px, 400px 200px);
+          clip-path: polygon(300px 300px, 400px 400px, 400px 200px);
+}
+
+.o-2 {
+  -webkit-clip-path: polygon(300px 300px, 200px 200px, 400px 200px);
+          clip-path: polygon(300px 300px, 200px 200px, 400px 200px);
+}
+
+.o-3 {
+  -webkit-clip-path: polygon(300px 300px, 200px 200px, 200px 400px);
+          clip-path: polygon(300px 300px, 200px 200px, 200px 400px);
+}
+
+/* Second Part 5 - 8 */
+.o-4 {
+  -webkit-clip-path: polygon(300px 600px, 200px 400px, 400px 400px);
+          clip-path: polygon(300px 600px, 200px 400px, 400px 400px);
+}
+
+.o-5 {
+  -webkit-clip-path: polygon(600px 300px, 400px 400px, 400px 200px);
+          clip-path: polygon(600px 300px, 400px 400px, 400px 200px);
+}
+
+.o-6 {
+  -webkit-clip-path: polygon(300px 0, 200px 200px, 400px 200px);
+          clip-path: polygon(300px 0, 200px 200px, 400px 200px);
+}
+
+.o-7 {
+  -webkit-clip-path: polygon(0 300px, 200px 400px, 200px 200px);
+          clip-path: polygon(0 300px, 200px 400px, 200px 200px);
+}
+
+/* Second Part 9 - 16 */
+.o-8 {
+  -webkit-clip-path: polygon(300px 600px, 400px 400px, 500px 500px);
+          clip-path: polygon(300px 600px, 400px 400px, 500px 500px);
+}
+
+.o-9 {
+  -webkit-clip-path: polygon(500px 500px, 400px 400px, 600px 300px);
+          clip-path: polygon(500px 500px, 400px 400px, 600px 300px);
+}
+
+.o-10 {
+  -webkit-clip-path: polygon(600px 300px, 400px 200px, 500px 100px);
+          clip-path: polygon(600px 300px, 400px 200px, 500px 100px);
+}
+
+.o-11 {
+  -webkit-clip-path: polygon(300px 0, 400px 200px, 500px 100px);
+          clip-path: polygon(300px 0, 400px 200px, 500px 100px);
+}
+
+.o-12 {
+  -webkit-clip-path: polygon(100px 100px, 200px 200px, 300px 0);
+          clip-path: polygon(100px 100px, 200px 200px, 300px 0);
+}
+
+.o-13 {
+  -webkit-clip-path: polygon(100px 100px, 0 300px, 200px 200px);
+          clip-path: polygon(100px 100px, 0 300px, 200px 200px);
+}
+
+.o-14 {
+  -webkit-clip-path: polygon(0 300px, 100px 500px, 200px 400px);
+          clip-path: polygon(0 300px, 100px 500px, 200px 400px);
+}
+
+.o-15 {
+  -webkit-clip-path: polygon(200px 400px, 100px 500px, 300px 600px);
+          clip-path: polygon(200px 400px, 100px 500px, 300px 600px);
+}
+
+/**
+ * Contents
+ */
+.contents {
+  margin: 300px 0 500px;
+}
+
+.contents ul {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+}
+
+.contents ul li {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.contents ul li a {
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  outline: 1px solid #ddd;
+  background: #fff;
+  border: 0;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.contents ul li a:hover {
+  background: url("https://i.imgur.com/jhtFWLFl.jpg");
+  text-indent: -9999px;
+}
+
+/**
+ * Footer
+ */
+.footer {
+  background: #000 url("https://i.imgur.com/mwDDSdD.jpg");
+  padding: 100px 0;
+  margin-top: 100px;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.theme-night {
+  background: #555;
+}
+
+.theme-night p, .theme-night q, .theme-night li, .theme-night a, .theme-night h2, .theme-night h3, .theme-night h4 {
+  color: #fff;
+}
+
+/**
+ * Config Panel
+ */
+.config {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.config ul {
+  margin-top: 20px;
+}
+
+.config ul li {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 0 0 10px;
+}
+
+.config-panel {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn-config-toggle {
+  background: transparent url("../images/config.png") no-repeat;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-config {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  padding: 0 20px;
+  position: relative;
+}
+
+.btn-config.active:before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/*# sourceMappingURL=styles.css.map */

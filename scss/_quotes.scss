@@ -1,0 +1,26 @@
+/**
+ * Quotes
+ */
+.blockquote-panel {
+  text-align: right;
+}
+
+.blockquote {
+  text-align: right;
+  margin: 300px 0 100px;
+  padding: 0;
+  width: 500px;
+  display: inline-block;
+
+  .quote-author {
+    margin-top: 10px;
+  }
+
+  ul > li {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

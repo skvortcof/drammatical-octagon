@@ -1,0 +1,255 @@
+- var title = "Drammatical Octagon";
+
+doctype html
+html(class="no-js", lang="en")
+  head
+    title #{title}
+    meta(charset="utf-8")
+    meta(viewport="utf-8" content="width=device-width")
+
+    // Fonts
+    link(href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&amp;subset=cyrillic", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Oswald:700&amp;subset=cyrillic", rel="stylesheet")
+
+    // CSS
+    link(rel="stylesheet", href="css/styles.css")
+
+  body#index
+    noscript Version without JavaScript is there http://lj.rossia.org/users/kyzma/815382.html
+
+    audio(autoplay, loop, preload)#audio
+      source(src="sound/Pxpi7zrDmJnw.128.mp3", type="audio/mpeg")
+
+    .config#config
+      button.btn-config-toggle#btn_config
+      .config-panel#config_panel
+        ul
+          li <button class="btn-config" id="btn_fullScreen">Full Screen</button>
+          li <button class="btn-config" id="btn_fontSize">Enlarged Text</button>
+          li <button class="btn-config" id="btn_sound">Sound Off</button>
+          li <button class="btn-config" id="btn_theme">Night Theme</button>
+
+    // Octagon
+    .octagon#octagon
+      img(src="https://i.imgur.com/qEoWQSo.gif", alt="")
+      img(src="https://i.imgur.com/jhtFWLFl.jpg", alt="")
+      //img(src="https://i.imgur.com/1ad0QBtl.jpg", alt="")
+      img(src="https://i.imgur.com/ZIy3I2D.png?1", alt="")
+
+    // Header
+    header.header
+      h2.header-title.
+        <span class="title-1">Dr/mm/tic/l</span> <span class="title-2">Octag⯄n</span>
+      p interactive installation of winter
+
+    // Blockquote
+    .col
+      .blockquote-panel
+        blockquote.blockquote
+          ul
+            li.quote-block
+              q Nulla in Mundo Pax Sincera
+              p.quote-author ~ A. Vivaldi (<a href="https://en.wikipedia.org/wiki/Nulla_in_mundo_pax_sincera" target="_blank">RV 630</a>, 1735)
+
+
+    // Content
+    .col
+      .row
+        .contents
+          ul.contents-list
+            li.contents-item.contents-item-1.
+              <a href="#index"><span>Index</span></a>
+            li.contents-item.contents-item-2.
+              <a href="#preamble"><span>Preamble</span></a>
+            li.contents-item.contents-item-3.
+              <a href="#key"><span>Key</span></a>
+            li.contents-item.contents-item-4.
+              <a href="#coda"><span>Coda</span></a>
+
+    // Header
+    header.header.subheader
+      h2.header-title#preamble
+        span.subtitle Preamble
+
+    // Intro
+    .col
+      .row
+        .text
+          h3#intro Intro
+
+          p Драмматический октагон:
+
+          ul
+            li - ремиксы нервных тиков
+            li - бесконечное молчание на мои вопросы
+            li - любопытное просматривание профайлов
+            li - лето где ты?
+            li - сводка абсолютной никому не нужности
+
+    // Preface
+    .col
+      .row
+        .text
+          h3#preface Preface
+
+          p.
+            Прошло <span id="days">13k+</span> суток, а я всё ещё ничего не понимаю.<br>
+            Но уже не Там, а в другом месте. <br> И в этот раз без многомерных глупостей и цитирований потокового сознания.
+
+          p 8 голосов, возрастов, судеб. А для примера больше и не надо.
+
+          p.
+            Как вплестись в новый узор?<br>
+            Стих кроме развлечения.<br>
+            Если не развлекает, значит устал.
+
+          p И не то чтобы осуждаю. Мне ли вмешиваться? Но всё же.
+
+
+    // Preverse
+    .col
+      .row
+        .text.
+          <h3>
+            Preverse
+            Социальное VI. Треугольник
+          </h3>
+
+    .col
+      .row
+        .key
+          .card
+            p Бесит, что кажется надо спешить.
+            p Бесит, что кажется надо любить.
+            p Бесит, что кажется тертым плечо.
+            .key-spacer
+            p Драмматический треугольник, оу-о.
+            .key-spacer
+            p А я просто на все положил.
+            p Живу, как маленький принц ---
+            p Его роза увяла, её обдолбало.
+            p А лиса убежала, так ей и надо.
+            .key-spacer
+            p Бесит --- нельзя просто дружить,
+            p Бесит --- не стать морковой в бюджете,
+            p Бесит --- когда к себе уважения требуют...
+            .key-spacer
+            p Всё бесит, и что после всего.
+            p Драмматический треугольник, оу-о.
+            .key-spacer
+            p Сори, не местным приехал в твой двор.
+            p Сори, завидую стршно, до боли.
+            p Ведь тоже хочу поиграть
+            p В ролевой реал-лайф треугольник.
+
+
+
+
+
+
+    // Header
+    header.header.subheader
+      h2.header-title#key
+        span.subtitle Key
+
+
+
+    iframe.iframe(src="./slider.html", frameborder="0")
+
+
+
+    // Coda
+    header.header.subheader
+      h2.header-title#coda
+        span.subtitle Coda
+
+    .col
+      .row
+        .text
+          p Вот и закончилась интуитивная песня про то, что известно.
+
+          p Мне бы можно было бы вступить в какой-нибудь клуб:
+          ul
+            li - но я не могу долго терпеть --- устраиваю революцию за ваш счет
+            li - от многолетних наблюдений царящего лицо приобрело отталкивающую усмешку
+            li - как и котя несу свой порядок и справедливость
+          p &nbsp;
+          p &nbsp;
+          h3.text-center Как найти выход и примериться с самим собой?
+
+
+
+
+    // Footer
+    footer.footer
+      .col
+        .row
+          h4 Images
+
+          ul
+              li https://www.chrisriversart.com/
+              li https://www.instagram.com/janabrike/?hl=en
+              li http://jana-brike.squarespace.com/
+              li http://jana-brike.squarespace.com/#/selected-other-projects-20162017/
+              li https://www.facebook.com/106947296014115/photos/a.198207543554756/2072703806105111/?type=3&theater
+              li http://www.distinctionart.com/
+              li https://beautifulbizarre.net/
+              li http://www.posprints.com/
+              li https://www.facebook.com/stuz0r/photos/a.488891924914796/515980512205937/?type=3&theater
+              li https://unsplash.com/photos/cSTeMQdGYXs
+              li http://badcodec.tumblr.com
+              li https://www.facebook.com/FingersInTheNoize/ - bg peoples
+              li https://unsplash.com/photos/A37LSlDbFJg
+              li http://www.distinctionart.com/exhibitgallery.php?showID=151&fltr=prev
+
+
+          h4 Inspiration
+
+          ul
+            li А. Хиршман, "Выход, голос и верность" (1970)
+            li Maceo Plex - Solar Detroit https://www.youtube.com/watch?v=cXBIZOiSaxA
+            li Треугольник карпмана https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%9A%D0%B0%D1%80%D0%BF%D0%BC%D0%B0%D0%BD%D0%B0
+
+          h4 Percentage
+
+          ul
+            li 0% gangsters
+            li 0% drugs
+            li 15% nudity
+            li 0% piercings
+            li 0% tattoos
+            li 70% war
+            li 0% racism
+            li 5% love
+
+          h4 Tags
+
+          ul
+            li #okcurrence
+            li #thrilling
+            li #emaciation
+            li #memorabilia
+            li #equanimity
+            li #despair
+            li #invincible
+            li #ritual
+            li #redemtion
+
+          h4 Technical
+
+          p Dynamic message --- когда сообщение состоит не только из текста, но и приправлено скриптами
+
+
+          p (c) 2019
+
+    // jQuery
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+
+    // Octagon
+    script(src="js/octagon.js")
+
+    // Full Screen
+    script(src="js/screenfull.min.js")
+
+    // Other things
+    script(src="js/app.js", type="module")

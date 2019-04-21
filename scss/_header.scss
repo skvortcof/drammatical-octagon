@@ -1,0 +1,82 @@
+/**
+ * Header
+ */
+.header {
+  padding: 0 100px;
+
+  &.subheader {
+    padding: 200px 0;
+  }
+
+  /**
+ * Quotes
+ */
+  .blockquote-panel {
+    text-align: right;
+  }
+
+  .blockquote {
+    text-align: right;
+    margin: 100px 0;
+    padding: 0;
+    width: 500px;
+    display: inline-block;
+
+    q {
+      font-style: italic;
+    }
+
+    .quote-author {
+      margin-top: 10px;
+    }
+
+    ul>li {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+  // https://css-tricks.com/image-under-text/
+  .header-title {
+    font-size: 10rem;
+    font-family: $font-header;
+    letter-spacing: 45px;
+    text-align: center;
+    text-transform: uppercase;
+
+    .title-1 {
+      font-size: 2rem;
+      letter-spacing: 35px;
+      font-family: arial;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .title-2 {
+      color: #999;
+      background: url('https://i.imgur.com/PxAJOHs.gif');
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: #fff;
+      text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+  }
+
+  p {
+    text-align: center;
+    padding: 50px 0;
+    text-transform: lowercase;
+  }
+}

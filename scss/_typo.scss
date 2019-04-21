@@ -1,0 +1,82 @@
+
+
+/**
+ * Typography
+ */
+
+html {
+  font-size: $basic-font-size;
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+
+  &.increase-font-size {
+    font-size: 100%;
+
+    .col {
+      width: 1000px;
+    }
+  }
+}
+
+body {
+  font-family: $font-stack;
+}
+
+h3 {
+  font-size: $subheader-font-size;
+  margin-bottom: $text-spacer;
+}
+
+h4 {
+  font-size: $subheader-font-size;
+}
+
+p,
+q,
+a,
+li {
+  font-size: $text-font-size;
+  line-height: $text-font-size * 1.618;
+  word-spacing: 5px;
+  letter-spacing: -0.3px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 4px double #000;
+}
+
+q {
+  font-style: italic;
+}
+
+.text {
+  padding-bottom: 100px;
+
+  p+p {
+    margin-top: $text-spacer;
+  }
+
+  ul {
+    margin-top: $text-spacer;
+  }
+}
+
+/**
+ * Illustration
+ */
+.img {
+  text-align: center;
+  padding: 25px 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+/**
+ * Config Panel
+ */
+.config {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  ul {
+    margin-top: 20px;
+    li {
+      font-size: 18px;
+      line-height: 18px;
+      padding: 0 0 10px;
+    }
+  }
+}
+
+.config-panel {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn-config-toggle {
+  background: transparent url('../images/config.png') no-repeat;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-config {
+  font-family: $font-stack;
+  font-size: 18px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  padding: 0 20px;
+  position: relative;
+
+  &.active:before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
