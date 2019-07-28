@@ -3,7 +3,7 @@
   <head>
     <title>Drammatical Octagon</title>
     <meta charset="utf-8">
-    <meta viewport="utf-8" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
     <!-- Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700&amp;amp;subset=cyrillic" rel="stylesheet">
@@ -65,7 +65,8 @@
       </div>
     </div>
     <!-- Header-->
-    <header class="header subheader">
+    <header class="header subheader octoblock">
+      <canvas class="canvas" id="canvas"></canvas>
       <h2 class="header-title" id="preamble"><span class="subtitle">Preamble</span></h2>
     </header>
     <!-- Intro-->
@@ -228,6 +229,8 @@
         </div>
       </div>
     </footer>
+    <!-- Tree.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"></script>
     <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Octagon-->

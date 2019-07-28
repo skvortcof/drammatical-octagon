@@ -44,7 +44,7 @@
   position: relative;
 
   &.active:before {
-    content: '✔';
+    content: '\2714 \fe0e';
     position: absolute;
     left: 0;
     top: 0;

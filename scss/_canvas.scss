@@ -1,0 +1,19 @@
+.octoblock {
+  position: relative;
+  width: 100%;
+
+  .header-title {
+    position: relative;
+    z-index: 20px;
+  }
+}
+
+.canvas {
+  width: 3000px;
+  height: 3000px;
+  position: absolute;
+  right: -40%;
+  top: -100%;
+  z-index: 10px;
+}
+
